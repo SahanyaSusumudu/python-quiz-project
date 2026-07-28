@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/10h0fmho9LiN8SunW8UcbsVKpKSAzP1zD
 """
 
-score = 3
+score = 4
 print("Hello !! Welcome to Quiz Game !!")
 name = input("Enter your name: ")
 
@@ -37,6 +37,13 @@ try:
     print("Incorrect Answer")
     score -= 1
 
+ question_4 = input("\nQ3] What is the sign for modulus in python? \n1] / \n2] # \n3] * \n4] %\n" )
+  if question_4 == 4:
+    print("You are correct")
+  else:
+    print("Incorrect Answer")
+    score -= 1
+
   print("\n---Score Board---")
   print("Name: ",name)
   print("Final Score: ",score)
@@ -46,6 +53,8 @@ try:
     print("Well done!!")
   elif score == 3:
     print("Excellent!!")
+  elif score == 4:
+    print("WOOWW!! Excellent work!!)
   else:
     print("Try better next time..")
 
